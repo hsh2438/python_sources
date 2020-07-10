@@ -13,5 +13,5 @@ for idx in range(1000):
     vector = [random.gauss(0, 1) for _ in range(length_of_vector)]
     annoy_index.add_item(idx, vector)
 
-annoy_index.build(10) 
+annoy_index.build(10) #parameter: number of trees for annoy
 annoy_index.save('test.annoy')
