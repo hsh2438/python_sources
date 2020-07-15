@@ -20,10 +20,19 @@ class UniversalSentenceEncoder:
     def get_vector(self, sentence):
         embedding = self.model([sentence])
         return embedding.numpy().tolist()[0]
+    
+    def get_vector_batch(self, sentences):
+        embedding = self.model(sentences)
+        return embedding.numpy().tolist()
 
 
 if __name__ == '__main__':
     use = UniversalSentenceEncoder('../model')
+    vector = use.get_vector('start')
+    vectors = use.get_vector_batch(['start', 'start', 'start', 'start', 'start', 'start'])
+    print(vector)
+    print(vectors)
+
     vector1 = use.get_vector('we can go ahead and set you up for service.')
     vector2 = use.get_vector('we can go ahead and set you up for service.')
 
