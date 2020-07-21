@@ -1,8 +1,13 @@
-# parallel data preprocessing example using producer consumer pattern with rabbitmq
+# docker compose example for rabbitmq with producer consumer pattern
 
-## setting rabbitmq with docker
+## start
 
-    docker run -d --name rabbitmq -p 5672:5672 -p 8080:15672 rabbitmq:3-management
+    docker-compose up
+
+scale up example
+
+    docker-compose up --scale consumer=3
+
     
 monitoring ip: 127.0.0.1:8080 <br>
 default username: guest <br>
