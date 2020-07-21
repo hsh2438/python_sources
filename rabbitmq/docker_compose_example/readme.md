@@ -11,6 +11,6 @@ scale up example
 
 ## monitoring rabbitmq management
 
-ip: 127.0.0.1:8080 <br>
+address: 127.0.0.1:8080 <br>
 default username: guest <br>
 default password: guest <br>
