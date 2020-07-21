@@ -8,7 +8,9 @@ scale up example
 
     docker-compose up --scale consumer=3
 
-    
-monitoring ip: 127.0.0.1:8080 <br>
+
+## monitoring rabbitmq management
+
+ip: 127.0.0.1:8080 <br>
 default username: guest <br>
 default password: guest <br>
