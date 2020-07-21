@@ -1,6 +1,6 @@
 # docker compose example for rabbitmq with producer consumer pattern
 
-## start
+## run
 
     docker-compose up
 
