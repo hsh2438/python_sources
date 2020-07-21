@@ -1,0 +1,12 @@
+version: '3'
+services:
+    producer:
+        build: producer
+        command: ['python', 'push.py']
+    consumer:
+        build: consumer
+        command: ['python', 'pull.py']
+    rabbitmq:
+        image: 'rabbitmq:3-management'
+        ports:
+            - '8080:15672' # for management dashboard
