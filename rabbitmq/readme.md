@@ -1,17 +1,10 @@
 # rabbitmq
 
-## setting rabbitmq with docker
+## simple example
+[simple rabbitmq python example](https://github.com/hsh2438/python_sources/tree/master/rabbitmq/simple_example) <br>
+execute rabbitmq server using docker <br>
+send & receive message example <br>
 
-    docker run -d --name rabbitmq -p 5672:5672 -p 8080:15672 rabbitmq:3-management
-    
-monitoring ip: 127.0.0.1:8080 <br>
-default username: guest <br>
-default password: guest <br>
-
-## send message
-
-    python send.py
-    
-## receive message
-
-    python receive.py
+## docker compose example
+[docker compose example for rabbitmq with producer consumer pattern](https://github.com/hsh2438/python_sources/tree/master/rabbitmq/docker_compose_example) <br>
+docker compose producer, consumer, rabbitmq <br>
