@@ -14,9 +14,3 @@ config['database']['charset'] = 'utf8'
 with open('config.ini', 'w') as configfile:
     config.write(configfile)
 
-
-""" read config file """
-config = configparser.ConfigParser()
-config.read('config.ini')
- 
-print(int(config['database']['port']))
